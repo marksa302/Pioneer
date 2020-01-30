@@ -1,28 +1,116 @@
 .wrapper {
+    background: #FFEEEE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4 1fr);
+    grid-template-rows: repeat(3 1fr);
     height: 100vh;
     grid-template-areas:
     "box1 box2"
     "box3 box4"
     "box5 box6"
 }
-.box1 {}
+/* Tulu ja kulu */
+.button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
 @media screen and (max-width:600px){
-.wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4 1fr);
-    height: 100vh;
-    grid-template-areas:
-    "box1" 
-    "box2"
-    "box3"
-    "box4"
-    "box5" 
-    "box6"
-}
-}
+    .wrapper {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4 1fr);
+            height: 100vh;
+            grid-template-areas:
+            "box1" 
+            "box2"
+            "box3"
+            "box4"
+            "box5" 
+            "box6"
+        }
+        }
+        ul {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        
+        #myText {
+            height: 2rem;
+            border: 2px;
+            border-color: slategray;
+            border-radius: 7px;
+        
+        }
+        
+        
+        #saldo {
+            max-width: 10em;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius:7px;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            font-size: x-large;
+            font-weight: 700;
+            text-align: center;
+        }
+        #saldo p {
+            margin: 0.3em;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            font-size: xx-large;
+            font-weight: 700;
+        }
+        
+        .buttons {
+            text-align: center;
+            margin-left: 10px;
+        }
+        ˇ
+        .column {
+            border:0.1em solid #FFFFFF;
+        }
+        
+        li {
+            width: 100%;
+            border-color: whitesmoke;
+            border: 1px;
+            list-style-type: none;
+        }
+        
+        .negative {
+            color: red;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        .positive {
+            color: rgb(0, 185, 0);
+            font-size: x-large;
+            font-weight: 700;
+        }
