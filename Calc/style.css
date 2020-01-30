@@ -1,3 +1,17 @@
+.wrapper {
+    display: grid;
+    /* grid-gap: 5px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3 1fr);
+    height: 100vh;
+    grid-template-areas:
+    "header header"
+    "navbar navbar"
+    "content1 content2"
+    "footer footer"
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -37,8 +51,10 @@
   **********************************************/
   
   .top {
+    grid-area: header
+    ;
     height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("http://www.pamaciba.lv/wp-content/uploads/2014/09/ka-aprekinat-pvn.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://cdn.hipwallpaper.com/i/71/36/5EpPgv.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -76,11 +92,11 @@
   
   .budget__income {
     margin-bottom: 10px;
-    background-color: #28B9B5;
+    background-color: #32CD32;
   }
   
   .budget__expenses {
-    background-color: #FF5049;
+    background-color: #FF0000;
   }
   
   .budget__income--text,
@@ -97,7 +113,9 @@
     float: left;
   }
   
-  .budget__income--percentage,
+  .budget__income--percentage {
+    grid-ar
+  }
   .budget__expenses--percentage {
     float: left;
     width: 34px;
@@ -120,7 +138,10 @@
   
   
   /***** FORM *****/
-  
+  .bottom{
+    grid-area: navbar;  
+  }
+
   .add {
     padding: 14px;
     border-bottom: 1px solid #e7e7e7;
