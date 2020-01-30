@@ -1,6 +1,6 @@
 .wrapper {
     display: grid;
-    /* grid-gap: 5px; */
+    /* grid-gap: 0px; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3 1fr);
     height: 100vh;
@@ -53,8 +53,8 @@
   .top {
     grid-area: header
     ;
-    height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://cdn.hipwallpaper.com/i/71/36/5EpPgv.jpg");
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Geometric-Simple-Background-Image.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -96,6 +96,7 @@
   }
   
   .budget__expenses {
+    grid-area: content2;
     background-color: #FF0000;
   }
   
@@ -114,9 +115,11 @@
   }
   
   .budget__income--percentage {
-    grid-ar
+
+
   }
   .budget__expenses--percentage {
+   
     float: left;
     width: 34px;
     font-size: 11px;
@@ -153,7 +156,7 @@
     text-align: center;
   }
   
-  .add__type {
+  .add__type1 {
     width: 55px;
     border: 1px solid #e7e7e7;
     height: 44px;
@@ -164,7 +167,19 @@
     font-weight: 300;
     transition: border 0.3s;
   }
-  
+
+  .add__type2 {
+    width: 55px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
   .add__description,
   .add__value {
     border: 1px solid #e7e7e7;
@@ -222,13 +237,14 @@
   }
   
   .income {
+    grid-area: content1;
     float: left;
     width: 475px;
     margin-right: 50px;
   }
   
   .expenses {
-    float: left;
+    float: right;
     width: 475px;
   }
   
@@ -260,7 +276,7 @@
     background-color: #f7f7f7;
   }
   
-  .item__description {
+  .item__descriptionincome {
     float: left;
   }
   
