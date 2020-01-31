@@ -16,3 +16,4 @@ Joonistame prototüübi ja kirjutame programmi, mis arvestaks sisestatud tulusid
 # Prototüüp
 https://www.figma.com/file/WXT4MEEsEoKMNtqTHQMRxk/Pioneer.Kalkulaator?node-id=14%3A31
 # Veebileht
+tak18pavelson.itmajakas.ee
