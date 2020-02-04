@@ -7,7 +7,7 @@ Hans-Kristjan Pavelson TAK-18
 Markus Salundi TAK-18
 ### Disain
 Daniel Nõukas TAK-18
-Arno Kosk TAK-18
+Arno Kosk TAK-19
 Aive Pähn TA-18
 # Kes me oleme
 Oleme Kuressaare Ametikooli Tarkvaraarenduse õpilased.
